@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: wheat;
+  font-size: 60px;
+  letter-spacing: 4px;
+  line-height: 15px;
+}
+
+header {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.switch-btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+  border-color: wheat;
+  color: wheat;
+  background-color: transparent;
+}
+.switch-btn span {
+  display: inline-block;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(135, 207, 235, 0.208);
+  margin: 0;
+  display: block;
+}
+.slide .switch {
+  left: 50%;
+}
